@@ -29,7 +29,7 @@ quick-draw/
 ├── frontend/               # Frontend p5.js
 │   ├── index.html          # HTML file
 │   ├── sketch.js           # p5.js script
-│   └── style.css           # Optional styles
+│   └── styles.css          # Optional styles
 │
 └── requirements.txt        # Python dependencies
 
@@ -70,20 +70,26 @@ git clone https://github.com/linalopes/quick-draw.git
 cd quick-draw
 ```
 
-2. Run the Jupyter Notebook (QuickMain.ipynb) to train the MLP model and save it. The Jupyter Notebook was made on MacOS M3 (mps instead of gpu or cpu).
+2. Install Python dependencies in your enviroment:
+```
+conda activate aicp-image
+pip install -r requirements.txt
+```
 
-3. Start the Flask server:
+3. Run the Jupyter Notebook (QuickMain.ipynb) to train the MLP model and save it. The Jupyter Notebook was made on MacOS M3 (mps instead of gpu or cpu).
+
+4. Start the Flask server:
 ```
 python backend/app.py
 ```
 
-4. Start a server for the Web-interface:
+5. Start a server for the Web-interface:
 ```
 cd front-end
 http-server
 ```
 
-5. Open the P5.js interface in your browser to interact with the model.
+56. Open the P5.js interface in your browser to interact with the model.
 
 ---
 # Next Steps

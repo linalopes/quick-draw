@@ -1,0 +1,10 @@
+Flask
+Flask-Cors
+Pillow
+matplotlib
+numpy
+seaborn
+scikit-learn
+torch
+torchvision
+urllib3
