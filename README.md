@@ -17,6 +17,24 @@ The focus is on:
 3. The repository has a didactic purpose, serving as part of my learning process in machine learning and its creative applications.
 
 # Repository Structure
+
+```
+quick-draw/
+│
+├── backend/                # Backend Flask
+│   ├── app.py              # Flask app
+│   ├── model_weights.pth   # Trained PyTorch model
+│   └── preprocess.py       # Preprocessing functions
+│
+├── frontend/               # Frontend p5.js
+│   ├── index.html          # HTML file
+│   ├── sketch.js           # p5.js script
+│   └── style.css           # Optional styles
+│
+└── requirements.txt        # Python dependencies
+
+```
+
 - Quick-Main.ipynb:
     A Jupyter Notebook containing the full pipeline:
     - Training the MLP model
