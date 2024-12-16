@@ -1,6 +1,8 @@
 # QuickDraw Exercise
 This repository is a reimplementation of the QuickDraw project as part of an assignment for my CAS - AI for Creative Practices. It focuses on training, evaluating, and deploying a simple neural network for creative applications.
 
+[Google Colab link](https://colab.research.google.com/github/linalopes/quick-draw/blob/main/Quick-Main.ipynb)
+
 ## What is QuickDraw?
 QuickDraw is a large-scale dataset of doodles collected from the Quick, Draw! game by Google, where players are tasked with quickly sketching objects. You can find the original project and dataset here:
 [QuickDraw Dataset on GitHub](https://github.com/googlecreativelab/quickdraw-dataset)
