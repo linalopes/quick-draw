@@ -97,9 +97,9 @@ http://127.0.0.1:5000/
 - Develop a **Convolutional Neural Network (CNN)** model using the same QuickDraw dataset.
 - Compare its performance with the current Multi-Layer Perceptron (MLP) model in terms of accuracy, training time, and usability.
 
-2. AI for Kids – Expanding the Project
+2. ImagiNation AI – Expanding the Project
 
-- This exercise serves as a foundation for a broader project called "**AI for Kids**", aimed at making machine learning approachable and creative for young learners.
+- This exercise serves as a foundation for a broader project called "**ImagiNation AI**", aimed at making machine learning approachable and creative for young learners.
 - **Future steps include**:
     - **Sketch Enhancement**: Use simple QuickDraw sketches as input and render them into more attractive illustrations.
     - **Integration with APIs**: Leverage tools like Replicate or custom pipelines to transform sketches into refined images. For example:
