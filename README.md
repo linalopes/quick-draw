@@ -21,15 +21,14 @@ The focus is on:
 ```
 quick-draw/
 │
-├── backend/                # Backend Flask
+├── web-interface/
 │   ├── app.py              # Flask app
 │   ├── model_weights.pth   # Trained PyTorch model
 │   └── preprocess.py       # Preprocessing functions
-│
-├── frontend/               # Frontend p5.js
-│   ├── index.html          # HTML file
-│   ├── sketch.js           # p5.js script
-│   └── styles.css          # Optional styles
+│   ── static/              # Frontend p5.js
+│      ├── index.html       # HTML file
+│      ├── sketch.js        # p5.js script
+│      └── styles.css       # Optional styles
 │
 └── requirements.txt        # Python dependencies
 
@@ -80,16 +79,15 @@ pip install -r requirements.txt
 
 4. Start the Flask server:
 ```
-python backend/app.py
+cd web-interface
+python app.py
 ```
 
-5. Start a server for the Web-interface:
-```
-cd front-end
-http-server
-```
 
-56. Open the P5.js interface in your browser to interact with the model.
+5. Open the P5.js interface in your browser to interact with the model.
+```
+http://127.0.0.1:5000/
+```
 
 ---
 # Next Steps

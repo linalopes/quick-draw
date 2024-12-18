@@ -1,7 +1,7 @@
 import os
 import io
 import torch
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, request, jsonify, send_file, send_from_directory
 from flask_cors import CORS  # Import Flask-CORS
 from PIL import Image
 import numpy as np
@@ -11,7 +11,7 @@ from collections import OrderedDict
 from preprocess import preprocess_image  # Custom preprocess function
 
 # Initialize Flask app
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 CORS(app, resources={r"/*": {"origins": "*"}}) 
 
 # Load trained model
@@ -110,6 +110,13 @@ def predict():
 
     return jsonify(predictions)
 
+@app.route('/')
+def serve_index():
+    return send_from_directory(app.static_folder, 'index.html')
+
+@app.route('/<path:path>')
+def serve_static_files(path):
+    return send_from_directory(app.static_folder, path)
 
 # Run the Flask server
 if __name__ == "__main__":
