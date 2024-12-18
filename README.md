@@ -40,10 +40,10 @@ quick-draw/
     - Evaluating the model
     - Saving the trained model
 
-- Backend (Flask Server):
+- web-interface (Flask Server):
 The Flask server loads the trained model and serves predictions for incoming sketch inputs.
 
-- Frontend (P5.js Interface):
+- static (P5.js Interface):
 A simple web interface built using P5.js, where users can draw sketches and see the model predictions in real-time.
 
 ## Key Technologies
