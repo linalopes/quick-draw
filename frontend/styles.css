@@ -42,6 +42,24 @@ a:hover {
   color: var(--bs-turquoise);
 }
 
+/* Color Classes */
+.deep-purple {
+  color: var(--bs-deep-purple);
+  fill: var(--bs-deep-purple);
+}
+.pink {
+  color: var(--bs-pink);
+  fill: var(--bs-pink);
+}
+.turquoise {
+  color: var(--bs-turquoise);
+  fill: var(--bs-turquoise);
+}
+.gray-green {
+  color: var(--bs-gray-green);
+  fill: var(--bs-gray-green);
+}
+
 /* Buttons */
 .btn-1 {
     color: var(--bs-deep-purple);
@@ -54,3 +72,35 @@ a:hover {
     border-color: var(--bs-pink);
 }
 
+.btn-2 {
+    color: var(--bs-deep-purple);
+    background-color: var(--bs-gray-green);
+    border-color: var(--bs-gray-green);
+}
+.btn-2:hover {
+    color: var(--bs-deep-purple);
+    background-color: transparent;
+    border-color: var(--bs-gray-green);
+}
+
+/* Fill color property for SVG icons */
+.fill-deep-purple {
+  fill: var(--bs-deep-purple);
+}
+.fill-pink {
+  fill: var(--bs-pink);
+}
+.fill-turquoise {
+  fill: var(--bs-turquoise);
+}
+
+/* Stroke color property for SVG icons */
+.stroke-deep-purple {
+  stroke: var(--bs-deep-purple);
+}
+.stroke-pink {
+  stroke: var(--bs-pink);
+}
+.stroke-turquoise {
+  stroke: var(--bs-turquoise);
+}
