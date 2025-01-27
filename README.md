@@ -50,6 +50,7 @@ A simple web interface built using P5.js, where users can draw sketches and see 
 - Python: Model training and backend development.
 - Flask: Backend server for model inference.
 - P5.js: Frontend for interactive sketching.
+- D3.js: Data visualization.
 - Jupyter Notebook: Development and experimentation.
 
 ## Purpose
@@ -124,6 +125,8 @@ http://127.0.0.1:5000/
 - Although architectures like CNNs (Convolutional Neural Networks) are more powerful for processing images, an MLP is:
     - Faster to train on smaller datasets.
     - Simple enough for learning and prototyping.
+
+---
 
 # Next Steps
 
