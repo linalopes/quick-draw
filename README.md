@@ -90,6 +90,26 @@ http://127.0.0.1:5000/
 ```
 
 ---
+# The Architecture Model Details
+
+## Input:
+- The model accepts inputs of **784 dimensions**, corresponding to a **28x28** pixel image from the dataset, flattened into a single vector.
+- Each pixel value (ranging from 0 to 255) is normalized to lie within **-1 and 1**.
+
+## Three Hidden Layers:
+- Each hidden layer has a **decreasing number of neurons**, gradually reducing the dimensionality:
+    - First hidden layer: **512 neurons**.
+    - Second hidden layer: **256 neurons**.
+    - Third hidden layer: **128 neurons**.
+- Each hidden layer performs the following:
+    - **ReLU (Rectified Linear Unit)**: Activation function to introduce non-linearities.
+    - **Batch Normalization**: Normalizes the layer outputs to accelerate training and improve stability.
+    - **Dropout**: Reduces overfitting by randomly "dropping out" some neurons during training (if configured).
+## Output:
+- The output layer has **14 neurons**, one for each class (QuickDraw categories).
+- There is no activation applied directly to the output, but during inference, **Softmax** is used to compute the probabilities for each class.
+
+
 # Next Steps
 
 1. Build and Compare with a CNN
