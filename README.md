@@ -90,13 +90,14 @@ http://127.0.0.1:5000/
 ```
 
 ---
-# The Architecture Model Details
+# The Architecture Model 
+## Details
 
-## Input:
+### Input:
 - The model accepts inputs of **784 dimensions**, corresponding to a **28x28** pixel image from the dataset, flattened into a single vector.
 - Each pixel value (ranging from 0 to 255) is normalized to lie within **-1 and 1**.
 
-## Three Hidden Layers:
+### Three Hidden Layers:
 - Each hidden layer has a **decreasing number of neurons**, gradually reducing the dimensionality:
     - First hidden layer: **512 neurons**.
     - Second hidden layer: **256 neurons**.
@@ -105,10 +106,24 @@ http://127.0.0.1:5000/
     - **ReLU (Rectified Linear Unit)**: Activation function to introduce non-linearities.
     - **Batch Normalization**: Normalizes the layer outputs to accelerate training and improve stability.
     - **Dropout**: Reduces overfitting by randomly "dropping out" some neurons during training (if configured).
-## Output:
+
+### Output:
 - The output layer has **14 neurons**, one for each class (QuickDraw categories).
 - There is no activation applied directly to the output, but during inference, **Softmax** is used to compute the probabilities for each class.
 
+## Why Did We Choose This Architecture?
+
+### Simplicity:
+- Since the dataset is small and consists of simple grayscale images (28x28), an MLP is sufficient to capture the patterns.
+
+### Generalization:
+- The use of Batch Normalization helps stabilize training and improve performance.
+- Dropout reduces overfitting and makes the model more robust.
+
+### Performance:
+- Although architectures like CNNs (Convolutional Neural Networks) are more powerful for processing images, an MLP is:
+    - Faster to train on smaller datasets.
+    - Simple enough for learning and prototyping.
 
 # Next Steps
 
